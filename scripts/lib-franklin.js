@@ -492,6 +492,7 @@ export async function loadBlocks(main) {
  * @param {Array} breakpoints breakpoints and corresponding params (eg. width)
  */
 export function createOptimizedPicture(src, alt = '', eager = false, breakpoints = [{ media: '(min-width: 400px)', width: '2000' }, { width: '750' }]) {
+  console.log(src);
   const url = new URL(src, window.location.href);
   const picture = document.createElement('picture');
   const { pathname } = url;
